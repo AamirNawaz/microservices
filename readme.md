@@ -13,4 +13,6 @@
 **Created By : Aamir Nawaz**
 **Principal Software Engineer**
 **Node.js | PHP | Golang | Python**
-**linkedIn: https://linkedin.com/in/aamirnawaz123/**
+
+**Linked**
+linkedIn: https://linkedin.com/in/aamirnawaz123/
