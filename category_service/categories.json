@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "category_name": "cosmatics",
+      "status":"active"
+    },
+    {
+      "id": 2,
+      "category_name": "soap",
+      "status":"inactive"
+    },
+    {
+      "id": 3,
+      "category_name": "shampoo",
+      "status":"active"
+    },
+    {
+      "id": 4,
+      "category_name": "Drinks",
+      "status":"active"
+    },
+    {
+      "id": 5,
+      "category_name": "perfumes",
+      "status":"inactive"
+    },
+    {
+      "id": 6,
+      "category_name": "shoes",
+      "status":"active"
+    },
+    {
+      "id": 7,
+      "category_name": "Baby toys",
+      "status":"active"
+    },
+    {
+      "id": 8,
+      "category_name": "Bubbles",
+      "status":"inactive"
+    }
+]

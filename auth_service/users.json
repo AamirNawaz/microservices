@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "email":"aamir@gmail.com",
+        "password":12345,
+        "status":true
+    },
+    {
+        "id":2,
+        "email":"tahir@gmail.com",
+        "password":12345,
+        "status":true
+    },
+    {
+        "id":3,
+        "email":"inam@gmail.com",
+        "password":12345,
+        "status":true
+    },
+    {
+        "id":4,
+        "email":"basit@gmail.com",
+        "password":12345,
+        "status":true
+    }
+
+]
