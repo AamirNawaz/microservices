@@ -10,10 +10,10 @@
 
 **Category services for managing categories**
 
-**Author**
-	**Aamir Nawaz**
-	**Principal Software Engineer**
-	**Node.js | PHP | Golang | Python**
+	**Author :**
+		Aamir Nawaz
+		Principal Software Engineer
+		Node.js | PHP | Golang | Python
 
-**Linked**
-	https://linkedin.com/in/aamirnawaz123/
+	**Linked**
+		https://linkedin.com/in/aamirnawaz123/
