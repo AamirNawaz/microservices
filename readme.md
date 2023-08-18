@@ -10,9 +10,10 @@
 
 **Category services for managing categories**
 
-**Created By : Aamir Nawaz**
-**Principal Software Engineer**
-**Node.js | PHP | Golang | Python**
+**Author**
+	**Aamir Nawaz**
+	**Principal Software Engineer**
+	**Node.js | PHP | Golang | Python**
 
 **Linked**
-linkedIn: https://linkedin.com/in/aamirnawaz123/
+	https://linkedin.com/in/aamirnawaz123/
