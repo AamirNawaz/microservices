@@ -7,13 +7,13 @@ service.use(bodyParser.json());
 const categories = require("./categories.json");
 
 service
-  .get("/health", async (req, res) => {
+  .get("/api/health", async (req, res) => {
     res.send("Welcome to restana node.js --- Category service");
   })
-  .get("/list", async (req, res) => {
+  .get("/api/list", async (req, res) => {
     res.send(categories);
   })
-  .get("/:id", async (req, res) => {
+  .get("/api/:id", async (req, res) => {
     let id = parseInt(req.params.id);
     let category = categories.find((pro) => pro.id === id);
     // console.log(typeof(category));
@@ -23,7 +23,7 @@ service
       res.send("category not found");
     }
   })
-  .post("/add", async (req, res) => {
+  .post("/api/add", async (req, res) => {
     categories.push(req.body);
     let category = categories.find((pro) => pro.id === req.body.id);
     res.send({ message: "category added successfully!", data: category });
@@ -35,7 +35,7 @@ service
     categories[index].status = status;
     res.send(`category updated successfully! - index: ${index}`);
   })
-  .delete("/delete/:id", async (req, res) => {
+  .delete("/api/delete/:id", async (req, res) => {
     let id = parseInt(req.params.id);
     let result = categories.splice({ id: id });
     let isCatExist = result.includes(id);

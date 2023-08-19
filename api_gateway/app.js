@@ -32,18 +32,18 @@ const server = gateway({
   routes: [
     //Auth service
     {
-      prefix: "api/auth",
+      prefix: "auth",
       target: "http://127.0.0.1:3000",
     },
     //proudct service
     {
-      prefix: "/api/product",
+      prefix: "/product",
       target: "http://127.0.0.1:3001",
       middlewares: [checkAuth],
     },
     // category service
     {
-      prefix: "/api/category",
+      prefix: "/category",
       target: "http://127.0.0.1:3002",
       middlewares: [checkAuth],
     },

@@ -7,16 +7,16 @@ service.use(bodyParser.json());
 const products = require("./products.json");
 
 service
-  .get("/", async (req, res) => {
+  .get("/api", async (req, res) => {
     res.send("Welcome to restana node.js --- Product service");
   })
-  .get("/health", async (req, res) => {
+  .get("/api/health", async (req, res) => {
     res.send("Welcome to restana node.js --- Product service");
   })
-  .get("/list", async (req, res) => {
+  .get("/api/list", async (req, res) => {
     res.send(products);
   })
-  .get("/:id", async (req, res) => {
+  .get("/api/:id", async (req, res) => {
     let id = parseInt(req.params.id);
     let product = products.find((pro) => pro.id === id);
     // console.log(typeof(product));
@@ -26,21 +26,21 @@ service
       res.send("proudct not found");
     }
   })
-  .post("/add", async (req, res) => {
+  .post("/api/add", async (req, res) => {
     // console.log(req.body);
     // const {id,title,url} = req.body;
     products.push(req.body);
     let product = products.find((pro) => pro.id === req.body.id);
     res.send({ message: "product added successfully!", data: product });
   })
-  .put("/update", async (req, res) => {
+  .put("/api/update", async (req, res) => {
     const { id, title, url } = req.body;
     const index = products.findIndex((pro) => pro.id === id);
     products[index].title = title;
     products[index].url = url;
     res.send(`product updated successfully! - index: ${index}`);
   })
-  .delete("/delete/:id", async (req, res) => {
+  .delete("/api/delete/:id", async (req, res) => {
     let id = parseInt(req.params.id);
     products.splice({ id: id });
     res.send(`Product No ${id} deleted successfully`);

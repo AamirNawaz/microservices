@@ -5,10 +5,8 @@ var jwt = require("jsonwebtoken");
 
 const { validateToken } = require("../middleware/verifyToken");
 
-router.post("/api/auth", async (req, res, next) => {
+router.post("/api/login", async (req, res, next) => {
   const { email, password } = req.body;
-  console.log(req.body);
-  // res.json(req.body);
   let user = users.find((user) => user.email === email);
   if (user !== undefined && user !== "") {
     if (user.password === password) {
@@ -34,7 +32,7 @@ router.post("/api/auth", async (req, res, next) => {
   }
 });
 
-router.post("/api/auth/signup", async (req, res, next) => {
+router.post("/api/signup", async (req, res, next) => {
   const { email, password } = req.body;
 
   users.push({ email: email, password: password, status: true });
